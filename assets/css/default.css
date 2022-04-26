@@ -1,0 +1,107 @@
+/* DECLARAÇÃO DE VARIÁVEIS */
+:root {
+    --vermelha: #E50914;
+    --preta: #141414; 
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* Os elementos se expandirão até a borda da caixa apenas */
+}
+
+/* ELEMENTOS PRINCIPAIS */
+body {
+    background: var(--preta);
+    font-family: 'Arial', Times, serif;
+    color: white;
+}
+
+header .container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin-right: 20px;
+}
+
+h2.asianflixLogo {
+    color: var(--vermelha);
+    font-family: 'Arial Black', Arial;
+    font-size: 40px;
+    margin-left: 10px;
+}
+
+header nav a {
+    text-decoration: none;
+    color: #AAA;
+    margin-right: 20px;
+}
+
+header nav a:hover {
+    color: #FFF;
+}
+
+/* FILME PRINCIPAL */
+.filme-principal {
+    font-size: 16px;
+    background: linear-gradient(rgba(0,0,0,.60),rgba(0,0,0,.60) 100%), url('../../resourses/img/cover/coverBG-DaliAndCook.jpg');
+    height: 600px;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start
+}
+
+.filme-principal .sinopse {
+    margin-top: 10px;
+    margin-bottom: 40px;
+}
+
+.filme-principal .container {
+    margin-left: 40px;
+    width: 75%;
+}
+
+
+.titulo {
+    margin-top: 3%;
+    font-size: 40px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.btn {
+    background-color: rgba(0,0,0,.50);
+    border: none;
+    color: white;
+    padding: 15px 30px 15px 30px;
+    font-size: 12px;
+    cursor: pointer;
+}
+
+button i {
+    margin-right: 5px;
+}
+
+.btnWatch, .btnInfo {
+    width: 170px;
+    margin-right: 5px;
+}
+
+button:hover {
+    background-color: white;
+    color: black;
+    transition: .3s ease all;
+}
+
+.box-filmes {
+    height: 100%;
+    width: 100%;
+    display: block;
+}
+
+.carrossel-filmes {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
